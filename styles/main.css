@@ -566,6 +566,7 @@ h3 {
   to {transform: rotate(-5deg)}
 }
 .shoes {
+  z-index: 4;
   display: flex;
   justify-content: space-between;
   animation-play-state: running;
