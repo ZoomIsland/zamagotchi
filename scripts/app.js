@@ -540,8 +540,5 @@ function startTimer() {
         if (!currentTam.tamAlive) {
             clearInterval(secondsTimer);
         }
-        $('.seconds').text(`${timer.seconds} Seconds`);
-        $('.minutes').text(`${timer.minutes} "Days"`);
-        $('.dayNight').text(`Daytime: ${timer.daytime}`);
     }, 1000)
 }
