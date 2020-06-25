@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script defer src="scripts/app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Project Zamagotchi</title>
+</head>
+<body>
+    <main>
+        <div class="containerEgg">
+            <h1 class="zamText">ZAMAGOTCHI</h1>
+            <section class="screen">
+                <section class="deathScreen">
+                  <h2><span class="deathName">Tamagotchi</span> has died!</h2>
+                  <div class="finalTam"></div>
+                  <div class="finalStats">
+                    <h4>Final age: <span class="ageStat"></span></h4>
+                    <h4>Fruits eaten: <span class="fruitFed"></span></h4>
+                    <h4>Times played: <span class="playtime"></span></h4>
+                  </div>
+                  <button class="restart">Hatch another egg?</button>
+                </section>
+                <section class="tamStats">
+                    <div class="name">
+                        <h2>TAMAGOTCHI, AGE 1</h2>
+                    </div>
+                    <div class="hunger">
+                        <h3>HUNGER</h3>
+                        <div class="hungerBar">
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                            <div class="hungerBars"></div>
+                        </div>
+                    </div>
+                    <div class="boredom">
+                        <h3>BOREDOM</h3>
+                        <div class="boredBar">
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                            <div class="boredBars"></div>
+                        </div>
+                    </div>
+                    <div class="sleepiness">
+                        <h3>SLEEPINESS</h3>
+                        <div class="sleepyBar">
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                            <div class="sleepyBars"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="roomDetail">
+                    <div class="backdrop">
+                        <div class="window">
+                            <div class="vertPane"></div>
+                            <div class="horizPane"></div>
+                            <div class="sky">
+                              <div class="sunMoon">
+                                <div class="sun"></div>
+                                <div class="moon"></div>
+                              </div>
+                            </div>
+                            <div class="ground"></div>
+                        </div>
+                    </div>
+                    <div class="floor"></div>
+                </section>
+                <section class="eggHome">
+                    <div class="egg">
+                        <div class="spot">
+                        </div>
+                        <div class="spot">
+                        </div>
+                        <div class="spot">
+                        </div>
+                      </div>
+                </section>
+                <section class="tamHome">
+                  <div class="lights"></div>
+                  <div class="tamWalking">
+                    <div class="tamItself">
+                      <section class="animation"></section>
+                      <div class="tamHead">
+                        <div class="extension">
+                        </div>
+                        <div class="eyes">
+                          <div class="eye"></div>
+                          <div class="eye"></div>
+                        </div>
+                        <div class="mouth">
+                        </div>
+                      </div>
+                      <div class="tamBody">
+                      </div>
+                      <div class="shoes">
+                        <div class="leftShoe">
+                        </div>
+                        <div class="rightShoe">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="feedButtons">
+                    <div id="feedRed" class="feedBtnContainer">
+                      <div class="stem"></div>
+                      <div class="red fruit">
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="shine">
+                          <div class="red shineCover">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="feedGreen" class="feedBtnContainer">
+                      <div class="stem"></div>
+                      <div class="green fruit">
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="shine">
+                          <div class="green shineCover">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="feedBlue" class="feedBtnContainer">
+                      <div class="stem"></div>
+                      <div class="blue fruit">
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="shine">
+                          <div class="blue shineCover">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="feedBlack" class="feedBtnContainer">
+                      <div class="stem"></div>
+                      <div class="black fruit">
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="shine">
+                          <div class="black shineCover">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="feedWhite" class="feedBtnContainer">
+                      <div class="stem"></div>
+                      <div class="white fruit">
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="stemConnect"></div>
+                        <div class="shine">
+                          <div class="white shineCover">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                <section class="screenButtons">
+                    <div class="feed screenButton">
+                        <h6>Feed</h6>
+                    </div>
+                    <div class="play screenButton">
+                        <h6>Play</h6>
+                    </div>
+                    <div class="sleep screenButton">
+                        <h6>Sleep</h6>
+                    </div>
+                </section>
+            </section>
+            <section class="buttons">
+                <div class="feed button">
+                </div>
+                <div class="play button">
+                </div>
+                <div class="sleep button">
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="tests">
+        <section class="timer">
+            <h4>Debug Tools</h4>
+            <button>Add 10 Seconds</button>
+            <div class="seconds">0 Seconds</div>
+            <div class="minutes">0 "Days"</div>
+            <div class="dayNight">Daytime: true</div>
+            <div>Note: 60 seconds = 1 day.</div>
+            <div>To see morphs, add time to under 60second increments</div>
+        </section>
+    </section>
+</body>
+</html>
